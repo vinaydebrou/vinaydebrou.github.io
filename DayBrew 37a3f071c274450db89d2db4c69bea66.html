@@ -1,0 +1,636 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>DayBrew</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="37a3f071-c274-450d-b89d-2db4c69bea66" class="page serif"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/met_horace_pippin.jpg" style="object-position:center 65.16%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">☕</span></div><h1 class="page-title">DayBrew</h1></header><div class="page-body"><p id="5ebafa4c-64a1-469d-9ed4-8b7771ebe709" class="">                                                    - <strong>by</strong><mark class="highlight-orange"> </mark><a href="https://twitter.com/vinaydebrou"><strong><mark class="highlight-orange">Vinay Débrou</mark></strong></a></p><p id="108ffcf9-3b88-4809-8426-629f5151eb88" class="">
+</p><p id="548a1e28-3cfb-46e2-9034-bb56006d8401" class="">You are at the Home Page.                                                                                                                  </p><nav id="6fad6171-caea-4e2d-88c0-53631130c24f" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#4b826053-09be-4f26-bb98-6b6d5d673525">Read</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#a4adba93-99df-457f-bb20-3b2086b3da31">DayBrew&#x27;s Note</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#9f132d9c-4b34-4ef6-ba85-3ad97906a22d">More Links</a></div></nav><hr id="587d5ce1-845e-4f83-91c0-0a7d733d45ec"/><h2 id="4b826053-09be-4f26-bb98-6b6d5d673525" class="">Read</h2><p id="b5abdc57-5b46-45b6-94f2-c5e9a12a498e" class="">
+</p><p id="8e8aaf2d-6266-4100-9f75-6e7a9e1f232f" class="">→</p><figure id="db4cb3ef-c490-4d7e-a601-2476215cbf50" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Ask%20for%20Help%20You%20Can%20db4cb3efc4904d7ea6012476215cbf50.html"><span class="icon">👋</span>Ask for Help, You Can</a></figure><p id="44b9359a-e7fd-4308-ab96-85172ad30a99" class=""><mark class="highlight-orange"><em>What&#x27;s stopping you, How to do it</em></mark></p><p id="1a1a1d96-bcac-4dfa-ac18-2629bcda2538" class=""><em><mark class="highlight-gray">November 18th, 2019</mark></em></p><p id="e85de94e-91a2-4630-8856-824cd7ce6c45" class="">
+</p><p id="c833b4bf-1696-4839-b884-a68916905d96" class="">→</p><figure id="25f11652-26af-4dd8-9a36-8c8eabede930" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Network%20of%20Free%20Agent%20Clusters%20NoFAC%2025f1165226af4dd89a368c8eabede930.html"><span class="icon">🌌</span>Network of Free-Agent Clusters (NoFAC)</a></figure><p id="eae9b8c6-7b66-46c7-be69-f8b5054d0e60" class=""><mark class="highlight-orange"><em>Horizontal gene transfer, Homophilous cliques, Economy of scope, Radical interdisciplinarity</em></mark></p><p id="2c03eeb2-b9b0-431e-94ba-7bd802a20118" class=""><em><mark class="highlight-gray">October 27th, 2019</mark></em></p><p id="aa705e51-66f6-4e0f-8d50-2e8097830f00" class="">
+</p><p id="f556cc03-3fd1-483f-a4d6-96238366db13" class="">→</p><figure id="e6adfd28-a6b2-4173-a523-7cb2b78df851" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/The%20Liquid%20World%20of%20Millennials%20e6adfd28a6b24173a5237cb2b78df851.html"><span class="icon">♒</span>The Liquid World of Millennials</a></figure><p id="65c509c8-ac72-4e1e-96d4-38ba6e9bdfb2" class=""><mark class="highlight-orange"><em> Rapidly evolving cultural-corals, Lack of a central grand-truth narrative, Unanchored generation</em></mark></p><p id="b0f18d8c-dbdc-4c0e-8af7-fa5fe2372df7" class=""><em><mark class="highlight-gray">October 19th, 2019</mark></em></p><p id="39f775f6-7098-442a-a753-d7fc54316ed1" class="">
+</p><p id="2f662ba9-3d80-458e-bc3f-01b3c251b849" class="">→ </p><figure id="b901f561-5cb8-43b5-a600-99b688cc3ac9" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/In%20Praise%20of%20the%20Small%20Goldilocks%20City%20b901f5615cb843b5a60099b688cc3ac9.html"><span class="icon">🏡</span>In Praise of the Small Goldilocks City</a></figure><p id="01dbf745-eb01-4d09-92b3-e19f9327d0f3" class=""><mark class="highlight-orange"><em>Reverse Migration enabled by location-independent work, Bye Megalopolis, Community and convenience</em></mark></p><p id="4213ee92-296a-4437-9548-42597ffba907" class=""><em><mark class="highlight-gray">October 17th, 2019</mark></em></p><p id="9e82bf33-64b5-4ec9-8649-b59c955e519a" class="">
+</p><p id="c7899d25-f36d-4aa7-9158-a3e700f7805d" class="">→</p><figure id="e3cea875-eea9-43ea-a202-cefd291fec74" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Truly%20Creative%20Machine%20e3cea875eea943eaa202cefd291fec74.html"><span class="icon">🎢</span>Truly Creative Machine </a></figure><p id="88ffa326-af89-4ba2-8e03-b6175e21cc31" class=""><em><mark class="highlight-orange">Deconstruction of creativity, Emergent intelligence, Physical markers of consciousness</mark></em></p><p id="887fda92-4123-4326-9c85-741cde44abab" class=""><em><mark class="highlight-gray">July 3rd, 2019</mark></em></p><p id="e0fc4ae2-cab0-4443-89d8-26a0d2b3db40" class="">
+</p><p id="2150b59b-bdbd-4e03-85ee-c8157125864c" class="">→</p><figure id="a8d4be5b-6c97-45a7-bd47-e3b315008ee5" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Signaling%20via%20Brands%20a8d4be5b6c9745a7bd47e3b315008ee5.html"><span class="icon">☃</span>Signaling via Brands</a></figure><p id="1a38fb35-ef3c-4d5e-9479-d28bc4cb53e5" class=""><mark class="highlight-orange"><em>Outsourcing of status-signaling, History of brands playing along, Unspoken exchange </em></mark></p><p id="94793bed-3c41-44a1-aec4-3859f0b375ba" class=""><em><mark class="highlight-gray">February 12th, 2019</mark></em></p><p id="125f7f23-520b-4527-a227-2264d3aeefc2" class="">
+</p><hr id="ab4eaa8c-96fc-46b2-8aa9-5325b35aada6"/><p id="7dcfc820-746d-4e12-a12b-7946295cb9fd" class="">
+</p><h2 id="a4adba93-99df-457f-bb20-3b2086b3da31" class="">DayBrew&#x27;s Note</h2><p id="0cefdfd0-f8de-4fb9-8345-95c463a8fafd" class="">Join our little group for regular chat and updates, every Thursday</p><p id="b618ce18-1ffb-4bda-b5fb-c2e4f077b98c" class=""><mark class="highlight-orange"><em>takes 30-seconds to join</em></mark></p><p id="c64c3263-820d-45ad-a651-d97f7c2c0a0e" class="">
+</p><figure id="8d833f5f-5821-4dd7-8119-fada6ad76afb"><div class="source"><a href="https://daybrew.substack.com/embed">https://daybrew.substack.com/embed</a></div></figure><p id="b3c41895-10e4-4ca5-8aa4-bcf2cce451b7" class="">
+</p><figure id="bae858bf-4fa7-4b0f-ad23-339ae1e92521" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/About%20DayBrew%20s%20Note%20bae858bf4fa74b0fad23339ae1e92521.html"><span class="icon">📬</span>About DayBrew&#x27;s Note</a></figure><p id="bc15c2d5-1d04-40d1-a8b1-472a911a5a24" class="">
+</p><hr id="dd6fe898-f5e5-4c07-b790-02680ff1fcd8"/><h2 id="9f132d9c-4b34-4ef6-ba85-3ad97906a22d" class="">More Links</h2><p id="f37b8bf1-f851-4c7b-9015-0881823eef19" class="">
+</p><figure id="2ff600ac-504d-4217-a3ce-643869677fd8" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/About%20Me%202ff600ac504d4217a3ce643869677fd8.html"><span class="icon">👦</span>About Me</a></figure><figure id="5dad84c4-9c80-45e6-b8b0-2b80bbb31fd0" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Daily%20Brew%205dad84c49c8045e6b8b02b80bbb31fd0.html"><span class="icon">🏙</span>Daily Brew</a></figure><figure id="be89f298-9ee0-4d36-8195-82f7478f3915" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Personal%20Writings%20be89f2989ee04d36819582f7478f3915.html"><span class="icon">📓</span>Personal Writings</a></figure><figure id="765e5c92-03dc-42ff-a6b3-8637369c7879" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/The%20LIFA%20Library%20765e5c9203dc42ffa6b38637369c7879.html"><span class="icon">📚</span>The LIFA Library</a></figure><figure id="04e2b832-4b17-4d6a-bb82-338e2b2e779a" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Side%20Projects%2004e2b8324b174d6abb82338e2b2e779a.html"><span class="icon">💻</span>Side Projects</a></figure><figure id="022f2a92-342f-4b41-8313-9a5760b31a82" class="link-to-page"><a href="DayBrew%2037a3f071c274450db89d2db4c69bea66/Intriguing%20Finds%20022f2a92342f4b4183139a5760b31a82.html"><span class="icon">🆒</span>Intriguing Finds</a></figure><p id="e396c7c5-ec9c-401e-a31e-ff621299e1f7" class="">
+</p></div></article></body></html>
