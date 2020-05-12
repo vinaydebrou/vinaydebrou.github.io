@@ -1,42 +1,22 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/vinaydebrou/personalweb/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-
----
-
-
 # Vinay Débrou
 
-[]
+*[Twitter](https://twitter.com/vinaydebrou)*
 
-You are at the Home Page.                                                                                                                  
+### Friendly Short Bio
+
+I'm an independent consultant — experimenting generalist currently revolving around datastory-building and web-strategy for internet-first projects and businesses. 
+
+I have worked on predictive modeling (data-science), web-content writing, e-commerce and designing digital systems. 
+
+I also like to dabble in living space design, small city living, neural networks(AI), classical stoicism, absurdism, anthropology and intangible cultural heritage management. 
+
+### To Reach Out
+
+I currently live in Dharamshala, a small, mountain city in the foothills of western Himalayas. Dalai Lama lives nearby. Here's my [CouchSurfing profile](https://www.couchsurfing.com/people/vinay_kumar_5) *(if you want to hang out with me physically or virtually).*
+
+You can **chat with me** on [Twitter](https://twitter.com/vinaydebrou) or drop me a line on *vinaydebrou@gmail.com*
+
+![About%20Me%202ff600ac504d4217a3ce643869677fd8/IMG-20191005-WA0000.jpg](About%20Me%202ff600ac504d4217a3ce643869677fd8/IMG-20191005-WA0000.jpg)
 
 ---
 
@@ -119,3 +99,38 @@ Join our little group for regular chat and updates, every Thursday
 [Side Projects](DayBrew%2037a3f071c274450db89d2db4c69bea66/Side%20Projects%2004e2b8324b174d6abb82338e2b2e779a.md)
 
 [Intriguing Finds](DayBrew%2037a3f071c274450db89d2db4c69bea66/Intriguing%20Finds%20022f2a92342f4b4183139a5760b31a82.md)
+
+
+---
+## Welcome to GitHub Pages
+
+You can use the [editor on GitHub](https://github.com/vinaydebrou/personalweb/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+
+---
