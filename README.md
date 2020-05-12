@@ -32,9 +32,9 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ---
 
 
-# DayBrew
+# Vinay Débrou
 
-- **by** **[Vinay Débrou](https://twitter.com/vinaydebrou)**
+[]
 
 You are at the Home Page.                                                                                                                  
 
@@ -105,6 +105,8 @@ Join our little group for regular chat and updates, every Thursday
 ---
 
 ## More Links
+
+**[Twitter](https://twitter.com/vinaydebrou)**
 
 [About Me](DayBrew%2037a3f071c274450db89d2db4c69bea66/About%20Me%202ff600ac504d4217a3ce643869677fd8.md)
 
