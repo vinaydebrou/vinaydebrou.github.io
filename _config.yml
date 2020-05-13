@@ -29,7 +29,7 @@ twitter_username: vinaydebrou
 github_username:  vinaydebrou
 
 # Build settings
-theme: minimal
+theme: minima
 plugins:
   - jekyll-feed
 
