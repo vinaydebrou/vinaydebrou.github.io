@@ -18,11 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Vinay Débrou | Data & Brand Strategy Consultant
+title: "Vinay Débrou | Data & Brand Strategy Consultant"
 email: vinaydebrou@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   I'm an independent consultant and steward of Data & Brand Strategy 
-  for web-based businesses. Also, I'm an experimenting generalist and write weekly about my life & interests. 
+  for web-based businesses & researchers. 
+  Also, I'm an experimenting generalist and write weekly about my life & interests. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" https://vinaydebrou.com
 twitter_username: vinaydebrou
