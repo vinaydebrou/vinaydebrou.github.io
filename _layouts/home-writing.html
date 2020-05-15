@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+
+<!-- this is the code I'm adding as custom edit
+# some useless snippets I added <a name="top">
+
+  srcset="/images/my-treehouse-headshot.jpeg 200w,
+             /images/my-treehouse-headshot.jpeg 400w,
+             /images/my-treehouse-headshot.jpeg 800w"
+     sizes="(max-width: 320px) 200px,
+            (max-width: 480px) 400px,
+            800px"
+
+Start here-->
+
+  <p> Hi there! my name is Vinay Débrou. Welcome to my website.</p>
+
+  <p>I am an independent consultant and steward of data and brand Strategy for web based businesses and researchers. </p>
+
+  <p> 
+  You can learn more about <a href="https://vinaydebrou.com/#consulting">my consulting work.</a></p>
+  
+    
+  <p> My weekly newsletter writing can be found on my Substack website here: <a href="https://daybrew.substack.com">Daybrew's Note</a>. </p>
+
+
+
+<!-- Custom code ends here --> 
+
+
+
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <!-- the below if endif condition filters the posts from a certain category -->
+      {%- if post.category=="writing" -%}
+
+
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>
