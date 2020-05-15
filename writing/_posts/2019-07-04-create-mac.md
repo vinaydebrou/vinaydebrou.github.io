@@ -1,17 +1,10 @@
-
 ---
-layout: post
-title:  "Signaling viLLa Brands"
-subtitle: "Outsourcing of status-signaling, History of brands playing along, Unspoken exchange"
-date:   2019-02-12 16:33:44 +0530
-category: essay
----
-
 layout: post
 title:  "Truly Creative Machine"
 subtitle: "Deconstruction of creativity, Emergent intelligence, Physical markers of consciousness"
 date:   2019-07-03 16:33:44 +0530
 category: essay
+---
 
 As AI research continue to accelerate, powered by cheap and accessible cloud along with open-sourced research papers and code-bases, we march towards the much-talked about point in time - the Singularity. Singularity, *(for those unaware of the term)* will be the point in time when the capabilities of Artificial General Intelligence(AGI) technology will culminate to cross the threshold of **"human-level intelligence"** in all aspects that really matter. If you are pondering, "*but that's a remarkably unspecific event*", you are right. It is a conceptual event defined by technologists and futurists, and the term *Singularity* is coined to mark this incredibly significant point. However, to get a deeper understanding of the implications, we need to get specific. That's what this post is about. 
 
