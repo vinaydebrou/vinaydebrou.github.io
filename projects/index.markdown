@@ -2,9 +2,9 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: writing
-title: "Writing"
-category: writing
-permalink: /writing/
+layout: projects
+title: "Consulting/Projects"
+category: projects
+permalink: /projects/
 
 ---
