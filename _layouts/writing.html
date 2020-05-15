@@ -3,9 +3,13 @@ layout: default
 ---
 
 <div class="home">
+  
+<!---
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+
+-->
 
 
 <!-- this is the code I'm adding as custom edit
@@ -20,12 +24,7 @@ layout: default
 
 Start here-->
 
-  <p> Hi there! my name is Vinay Débrou. Welcome to my website.</p>
-
-  <p>I am an independent consultant and steward of data and brand Strategy for web based businesses and researchers. </p>
-
-  <p> 
-  You can learn more about <a href="https://vinaydebrou.com/#consulting">my consulting work.</a></p>
+  <p> I write short essays on topics that I am deeply curious about. I also write poems and short stories occasionally.</p>
   
     
   <p> My weekly newsletter writing can be found on my Substack website here: <a href="https://daybrew.substack.com">Daybrew's Note</a>. </p>
@@ -40,11 +39,11 @@ Start here-->
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Essays" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <!-- the below if endif condition filters the posts from a certain category -->
-      {%- if post.category=="writing" -%}
+      {%- if post.category=="essay" -%}
 
 
       <li>
@@ -55,9 +54,36 @@ Start here-->
             {{ post.title | escape }}
           </a>
         </h3>
+        <h4 style="font-style:italic;">
+        {%- if post.subtitle -%}
+          {{ post.subtitle }}
+        {%- endif -%}
+        </h4>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
+      </li>
+      {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+    
+
+    <h2 class="post-list-heading">Poems</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <!-- the below if endif condition filters the posts from a certain category -->
+      {%- if post.category=="poem" -%}
+
+
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
       </li>
       {%- endif -%}
       {%- endfor -%}
