@@ -22,7 +22,7 @@ Read my writing [here](https://vinaydebrou.com/writing/).
 
 <h2> Where to Find Me </h2>
 
-**For in-person meets:** I currently live in Dharamshala (India)-- a small mountain city, set in the foothills of western Himalayas. Dalai Lama lives nearby. Here's my [CouchSurfing profile](https://www.couchsurfing.com/people/vinay_kumar_5)
+**For in-person meets:** I currently live in Dharamshala (India)-- a small mountain city, set in the foothills of western Himalayas. Dalai Lama lives nearby. Here's my [CouchSurfing profile](https://www.couchsurfing.com/people/vinay_kumar_5).
 
 **For virtual meets:** You can ping me on [Twitter](https://twitter.com/vinaydebrou) or drop me a short email on vinaydebrou@gmail.com.
 
