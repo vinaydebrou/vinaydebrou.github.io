@@ -57,3 +57,8 @@ These ideas and images come from the stellar work of Danielle Bassett over many 
 
 Liked this note? Why not share it with someone who’ll be delighted to read this?
 
+---
+
+
+[Next →](https://vinaydebrou.com/writing/essay/2020/05/04/complex-problems-team-of-indies.html)
+

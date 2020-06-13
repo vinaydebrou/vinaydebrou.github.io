@@ -72,3 +72,9 @@ The research-findings included here, along with the images used, are sourced fro
 
 Enjoyed reading this? Why not share it with someone who’ll be delighted to read this?
 
+---
+
+[← Previous](https://vinaydebrou.com/writing/essay/2020/04/30/small-world-network-brain-cell.html)
+
+[Next →](https://vinaydebrou.com/writing/essay/2020/05/21/case-study-capgemini-invent.html)
+

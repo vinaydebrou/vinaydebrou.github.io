@@ -77,6 +77,8 @@ The domains in which I have assisted my past clients include:
 
 ## Selected Projects where I was a contributor:
 
+* Data Collection and Preparation-for-Analysis for a Twitter idea-crowdsourcing experiment run by James Cattell (part of the Systems Unit in the UK Cabinet Office) on UK government's pandemic recovery plan. More details on the project [here](http://www.govtransformation.org/uncategorized/34-doughnuts-what-the-world-well-twitter-wants-to-tell-the-uk-government-about-recovery/).
+
 * Strategy Deck for post-pandemic business intelligence by the Yak Collective-- Don’t Waste the Reboot. My contribution was Slides 37-38: Restructure as a Small-World Network. [Project publicly available here](https://yakcollective.org/projects/yak-wisdom). 
 
 * Policy research project for Government of India’s official policy think tank (Niti Aayog) -- Surveying & Modeling Industry-Community collaboration models for rural development for India, from around the world. [Analysis & Strategy Document available here](https://drive.google.com/file/d/1_0D-HkRVF52Gs3Gloytt6FdpZsV_Qbn1/view?usp=sharing). 
