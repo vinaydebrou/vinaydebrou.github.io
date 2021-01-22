@@ -7,15 +7,14 @@ permalink: /about/
 ## Friendly Short Bio
 
 
-My name is Vinay Débrou. 
+My name is Vinay (Kumar) Débrou.
 
-I'm an experimenting generalist. I like reading, eating watermelon with black coffee and long walks in the nature. 
+I’m an experimenting generalist by temperament and independent consultant by profession. I like reading short-stories, making friends online, experimental cooking and long walks in the hills.
 
-My background by education is computer science. As an independent contractor and consultant, I have worked with clients on data-analytics, e-commerce branding strategy, web-content production and designing digital systems among other things.
+My current learning interests are small-world networks, living space design, small cities, DAOs, and anthropology.
 
-My current learning interests are small-world networks, living space design, small cities, neural networks, classical stoicism, and small virtual communities. 
 
-Read more about my consulting practice & projects [here](https://vinaydebrou.com/projects/).
+Read more about my consulting practice & side-projects [here](https://vinaydebrou.com/projects/).
 
 Read my writing [here](https://vinaydebrou.com/writing/).
 

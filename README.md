@@ -4,20 +4,13 @@
 
 ### Friendly Short Bio
 
-I'm an independent consultant — experimenting generalist currently revolving around datastory-building and web-strategy for internet-first projects and businesses. 
+I'm an independent consultant.
 
-I have worked on predictive modeling (data-science), web-content writing, e-commerce and designing digital systems. 
-
-I also like to dabble in living space design, small city living, neural networks(AI), classical stoicism, absurdism, anthropology and intangible cultural heritage management. 
+I also like to dabble in network-science, living space design, small city living, classical stoicism, absurdism, and anthropology.
 
 ### To Reach Out
 
-I currently live in Dharamshala, a small, mountain city in the foothills of western Himalayas. Dalai Lama lives nearby. Here's my [CouchSurfing profile](https://www.couchsurfing.com/people/vinay_kumar_5) *(if you want to hang out with me physically or virtually).*
-
 You can **chat with me** on [Twitter](https://twitter.com/vinaydebrou) or drop me a line on *vinaydebrou@gmail.com*
-
-![About%20Me%202ff600ac504d4217a3ce643869677fd8/IMG-20191005-WA0000.jpg](About%20Me%202ff600ac504d4217a3ce643869677fd8/IMG-20191005-WA0000.jpg)
-
 ---
 
 ## Read

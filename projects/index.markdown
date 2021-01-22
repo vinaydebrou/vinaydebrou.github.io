@@ -9,7 +9,7 @@ permalink: /projects/
 
 ---
 
-I am an independent data-strategy consultant and a hobby-researcher in network-science, living space design and online communities. My background by education is in computer science. I attended the *Computer Science & Engineering* undergraduate program of India’s top computer-science university-- Indian Institute of Technology.
+I am an independent data-strategy consultant and a hobbyist-researcher in network-science, living space design and online communities. My background by education is in computer science. I attended the *Computer Science & Engineering* undergraduate program of India’s top computer-science university-- Indian Institute of Technology.
 
 Email: vinaydebrou@gmail.com
 
