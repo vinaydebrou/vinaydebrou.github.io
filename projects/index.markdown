@@ -54,7 +54,7 @@ My consulting practice can involve: reviewing/architecting data-systems for anal
 * Data Systems: Preparation, analysis & visualization of customer research data for a senior executive at a big bank in Monaco. [More details here](https://www.guru.com/portfolio/tableau-charts-for-bank-survey-data/674870).
 
 
-* CX Strategy: Web-CX review for a subscription box company that curates artisan home-decor. [Website here](https://hartandhess.com/). 
+* CX Strategy: Web-CX review for a subscription box company that curates artisan home-decor. {Website here](https://hartandhess.com/). 
 
 * Service Design: Architecting an internal content production system for a fintech SaaS startup using Coda (a no-code developer tool). [Check out the system prototype here](https://coda.io/d/Oddup-Content-Work_dyxQrFhZOSE). 
 
