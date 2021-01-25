@@ -1,7 +1,7 @@
 
 ---
 layout: post
-title:  "Signaling viLLa Brands"
+title:  "Signaling via Brands"
 subtitle: "Outsourcing of status-signaling, History of brands playing along, Unspoken exchange"
 date:   2019-02-12 16:33:44 +0530
 category: essay
