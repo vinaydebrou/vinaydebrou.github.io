@@ -2,7 +2,7 @@
 layout: post
 title:  "Folk Festivals of the Free Agents"
 subtitle: "Synchrony Bonding, Custom Maps, Social Support System"
-date:   2021-01-25 19:05:44 +0530
+date:   2021-01-26 19:05:44 +0530
 category: essay
 ---
 
